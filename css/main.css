@@ -38,3 +38,31 @@ nav {
   grid-column: 1/-1;
   grid-row: 1;
 }
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0 1rem;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.125rem;
+  background-color: #bd027d;
+  border: 2px solid #960062;
+  border-radius: 6px;
+  padding: .5em .8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #eccee2;
+}
+
+nav a:hover {
+  background-color: #960062;
+}
