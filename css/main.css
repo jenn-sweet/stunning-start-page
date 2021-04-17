@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: Georgia;
+  font-family: Georgia, serif;
   line-height: 1.5;
   color: #323232;
   background-color: #bebebe;
@@ -26,8 +26,8 @@ header {
   grid-template-columns: auto 10rem auto;
   grid-template-rows: auto 1.5rem;
   grid-template-areas:
-  "left center right"
-  ".center.";
+    "left center right"
+    ".center.";
   margin-bottom: 1.5rem;
 }
 
@@ -43,7 +43,7 @@ nav {
   grid-row: 1;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0 1rem;
@@ -86,7 +86,7 @@ h2 {
 }
 
 section {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   border-bottom: 2px solid #afafaf;
   border-top: 2px solid #afafaf;
 }
@@ -99,24 +99,24 @@ section ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  }
+}
 
 section ul li {
   background-color: #ccc;
   border: 2px solid #afafaf;
   border-radius: 6px;
 
-display: grid;
-grid-template-columns: 1fr;
-grid-template-areas:
-"top"
-"middle"
-"bottom";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "top"
+    "middle"
+    "bottom";
 }
 
 section h3 {
   grid-area: bottom;
-  background-color: rgba(0, 0 ,0, .1);
+  background-color: rgba(0, 0, 0, .1);
   text-align: center;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 1.125rem;
@@ -149,4 +149,16 @@ section div img {
 
 section div strong {
   font-weight: normal;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: .875rem;
+  align-items: center;
+}
+
+footer a {
+  color: #000;
 }
